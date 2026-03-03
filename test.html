@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorifyMe Integration</title>
+    
+    <script type="text/javascript" async defer src="https://cdn.storifyme.xyz/static/web-components/storifyme-elements.min.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .story-wrapper {
+            margin-top: 30px;
+            min-height: 200px; /* Platzhalter, damit das Layout nicht springt */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Meine Story-Highlights</h1>
+        
+        <div class="story-wrapper">
+            <storifyme-collection account="kaufland-3760445" widget="9198" env="eu"></storifyme-collection>
+        </div>
+    </div>
+
+</body>
+</html>
